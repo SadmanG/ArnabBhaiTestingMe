@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Navigable Website (with nav and form)</title>
+    <link rel="stylesheet" href="css/Styles.css">
 </head>
 
 <body>
-    <h1>IIUC Fokira Student Portal</h1>
+    <h1>IIUC Fokira Student Portal <h2>The developer of this webpage should visit <a href="https://coolors.co/">Coolors</a>.</h2></h1>
     <nav>
         <a href="">
             <li>Home</li>
@@ -23,7 +24,7 @@
             <li>Review</li>
         </a>
     </nav>
-    <form action="SDclass1.html">
+    <form action="SDclass1.html" id="formSD">
         <fieldset>
             <legend>Welcome to Software Development registration</legend>
             <label for="fname">First name:</label><br>
@@ -32,38 +33,75 @@
             <input type="text" id="lname" name="lname" required><br>
             <label for="date">Date:</label>
             <input type="date" id="date" name="date" required><br>
-            <label for="file">File:</label>
+            <label for="file">File (Not Compulsory):</label>
             <input type="file" id="file" name="file"><br>
             <legend>Choose Your Language :</legend>
             <input type="radio" id="html" name="fav_language" value="HTML" required>
-            <label for="html">HTML</label><br>
+            <label for="html">HTML</label>
             <input type="radio" id="css" name="fav_language" value="CSS">
-            <label for="css">CSS</label><br>
+            <label for="css">CSS</label>
             <input type="radio" id="javascript" name="fav_language" value="JavaScript">
             <label for="javascript">JavaScript</label>
         </fieldset>
-        <button>Go to SDclass1.</button>
+        <button id="btnS1">Go to SDclass1.</button>
     </form>
     <main>
         <table>
             <tr>
+                <th>Time >>></th>
+                <th>10:40</th>
+                <th>11:30</th>
+                <th>12:20</th>
+                <th rowspan="7" class="thPad">B<br>R<br>E<br>A<br>K</th>
+                <th>01:50</th>
+                <th>02:40</th>
+                <th>03:30</th>
+            </tr>
+            <tr>
+                <th>Day \ Period</th>
                 <th>1st Period</th>
                 <th>2nd Period</th>
                 <th>3rd Period</th>
+                <th>4th Period</th>
+                <th>5th Period</th>
+                <th>6th Period</th>
             </tr>
             <tr>
+                <th>Saturday</th>
+                <td colspan="2">SD1</td>
+                <td></td>
                 <td>MATH</td>
-                <td>DSA</td>
-                <td>SD</td>
+                <td colspan="2">DLD</td>
             </tr>
             <tr>
+                <th>Sunday</th>
                 <td>CHEM</td>
+                <td colspan="2">MATH</td>
+                <td></td>
+                <td colspan="2">SD1</td>
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <td></td>
                 <td>GEED</td>
-                <td>CSE</td>
+                <td>DLD</td>
+                <td>DSA</td>
+                <td colspan="2">DSA Lab</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>GEED</td>
+                <td colspan="2">DSA</td>
+                <td colspan="3">DLD Lab</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>MDP</td>
+                <td colspan="2">STAT</td>
+                <td colspan="2">CHEM</td>
+                <td></td>
             </tr>
         </table>
     </main>
-    <h2>Explore <a href="https://coolors.co/">Coolors</a>.</h2>
 </body>
-
 </html>
